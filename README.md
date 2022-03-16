@@ -1,2 +1,2 @@
-# finnik008.github.io
+# Артем Финский
 My first project.
