@@ -28,7 +28,7 @@ nav {
 }
 .main {
     width: 100%;
-    height: calc (100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 65% no-repeat, url(../img/bg.jpg) top/contain no-repeat;
 }
 .title__container {
@@ -61,6 +61,54 @@ nav {
 }
 
 .aboutme {
-    height: 100%;
+    height: 800px;
     width: 100%;
+}
+.aboutme h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: 263244;
+    padding-top: 40px;
+	
+}
+#ava {
+    margin-left: 520px;
+    margin-top: 50px;
+}
+.aboutme span {
+    display: inline-block;
+    margin: 30px 0px 0px 130px;
+}
+.aboutme input {
+    display: inline-block;
+    font-size: 15px;
+    color: #6f707e;
+    border: 1px solid #6f707e;
+    margin: 50px 44%;
+    background: none;
+    padding: 6px 11px 6px 20px;
+    border-radius: 8px;
+    background: url(../img/save.png) no-repeat 3%;
+}
+.skills {
+    width: 100%;
+    height: 530px;
+    background: url(../img/bg_skills.jpg) no-repeat center/auto;
+}
+.skills h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: 263244;
+    text-align: center;
+    padding-top: 40px;
+}
+.skills li {
+    float: left;
+    margin-top: 13%;
+    margin-right: 20px;
+    padding-left: 20px;
+    line-height: 10px
+    font-size: 13px;
+    text-transform: uppercase;
 }
