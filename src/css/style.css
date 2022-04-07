@@ -185,11 +185,20 @@ main {
     padding-top: 40px;
 
 }
+.aboutme h2::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 100px;
+    margin-left: 565px;
+    padding-top: 20px;
+    
+}
 
 #ava {
     margin-left: 520px;
     margin-top: 50px;
-    animation: ava 5s ease;
+    animation: ava 3s ease;
     transition: 1s;
 }
 
@@ -200,14 +209,8 @@ main {
 
 
     }
-
-    50% {
-        transform: rotate(360deg);
-        margin-left: 900px;
-    }
-
     to {
-        transform: rotate(360deg) reverse;
+        transform: rotate(360deg);
         margin-left: 520px;
     }
 }
@@ -257,6 +260,14 @@ main {
     text-align: center;
     padding-top: 40px;
 }
+.skills h2::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 100px;
+    margin-left: 565px;
+    padding-top: 20px;
+}
 
 .skills li {
     float: left;
@@ -288,7 +299,7 @@ main {
 .keys {
     width: 100%;
     height: 1100px;
-    background: url(../img/keys_photo.png) no-repeat 0px 50%/1100px auto;
+    background: url(../img/keys_photo.jpg) no-repeat center/900px auto;
 }
 
 .keys h2 {
@@ -299,6 +310,14 @@ main {
     padding-top: 80px;
     padding-bottom: 40px;
 }
+.keys h2::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 100px;
+    margin-left: 565px;
+    padding-top: 20px;
+}
 
 .keys p {
     text-align: center;
@@ -306,6 +325,12 @@ main {
 
 .dop {
     margin: 600px 0px 0px 280px;
+    display: block;
+    width: 300px;
+    height: 100px;
+    border: 2px solid red;
+    
+    
     
 }
 
@@ -337,7 +362,9 @@ main {
 }
 
 .dop2 {
-    margin: 0px 0px 0px 250px;
+    margin: 0px 0px 100px 600px;
+    border: solid 2px red;
+    
 }
 
 .price {
@@ -355,27 +382,46 @@ main {
 
 .price h3 {
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 100px;
 }
 
 .change {
     margin: 20px 0px 0px 250px;
 }
-
-#srok {
-    
+.change select {
+    width: 750px;
+    height: 50px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    color: #737373;
+    padding-left: 20px;
+    transition: 0.3s all;
 }
 
-/*
-.price option {
+.change select:hover {
+    background: #f8f5f5;
+}
+
+
+#srok::before{
+    content: "";
+    display: block;
+    border: solid 2px #d1d1d1;
+    width: 750px;
+    margin-top: 40px;
     
 }
-*/
+.price span {
+
+    float: right;
+    margin-right: 240px;
+}
+
 .stata {
     width: 100%;
     height: 600px;
-    background: url(../img/bg_stata.jpg)no-repeat scroll center/1500px auto;
+    background: url(../img/bg_stata.jpg)no-repeat fixed center/1400px auto;
 }
 
 .stata h2 {
@@ -384,6 +430,14 @@ main {
     color: #6d747f;
     text-align: center;
     padding-top: 145px;
+}
+.stata h2::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 100px;
+    margin-left: 565px;
+    padding-top: 20px;
 }
 
 .stata li {
@@ -424,6 +478,14 @@ main {
     color: #263244;
     text-align: center;
     padding-top: 40px;
+}
+.otzov h2::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #d17700;
+    width: 100px;
+    margin-left: 565px;
+    padding-top: 20px;
 }
 
 .otzov img {
