@@ -1,20 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+
 body {
-    font-family: arial, sans-serif;
+/*    font-family: arial, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
     width: 100%;
     height: 60px;
-    background: #344051;
+    background: #344051;     
     position: fixed;
     z-index: 2;
 }
 
 .logo {
+    margin-left: 70px;
     color: #fff;
     font-size: 20px;
     line-height: 60px;
-    margin-left: 200px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
@@ -32,8 +36,8 @@ nav {
 }
 
 .menu {
+    margin-left: 170px;
     float: left;
-    padding-left: 300px;
 }
 
 .menu li {
@@ -88,6 +92,7 @@ nav {
     transition: 0.1s all;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
 }
 
 .menu li a:visited {
@@ -115,9 +120,10 @@ main {
 
 .title__container {
     float: left;
-    margin: 300px 0px 0px 200px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
+/*
     opacity: 0;
     -webkit-animation: title_move 1s ease forwards;
     -o-animation: title_move 1s ease forwards;
@@ -125,6 +131,7 @@ main {
     -webkit-animation-delay: 0.9s;
     -o-animation-delay: 0.9s;
     animation-delay: 0.9s;
+*/
 }
 
 @keyframes title_move {
@@ -139,7 +146,7 @@ main {
 }
 
 .title__container h1 {
-    font-size: 50px;
+    font-size: 65px;
     font-weight: bold;
 }
 
@@ -199,7 +206,7 @@ main {
 #ava {
     margin-left: 520px;
     margin-top: 50px;
-    animation: ava 3s ease;
+    animation: ava 5s ease infinite;
     transition: 1s;
 }
 
@@ -210,16 +217,17 @@ main {
 
 
     }
-
-    to {
+    50% {
         transform: rotate(360deg);
         margin-left: 520px;
     }
+
+    to {
+        transform: rotate reverse(360deg);
+        margin-left: -200px;
+    }
 }
 
-#ava:hover {
-    transform: rotate(360deg);
-}
 
 .aboutme span {
     display: inline-block;
@@ -303,7 +311,11 @@ main {
 .keys {
     width: 100%;
     height: 1100px;
-    background: url(../img/keys_photo.jpg) no-repeat center/900px auto;
+}
+.keys img {
+    width: 70%;
+    height: auto;
+    margin: 50px 0px 0px 180px;
 }
 
 .keys h2 {
@@ -329,11 +341,9 @@ main {
 }
 
 .dop {
-    margin: 600px 0px 0px 280px;
-    display: block;
-    width: 300px;
-    height: 100px;
-    border: 2px solid red;
+    display: inline-block;
+    float: left;
+    margin-left: 190px;
 
 
 
@@ -367,9 +377,8 @@ main {
 }
 
 .dop2 {
-    margin: 0px 0px 100px 600px;
-    border: solid 2px red;
-
+   padding-left: 70px;
+    display: inline-block
 }
 
 .price {
@@ -605,4 +614,32 @@ main {
 
 .contact form {
     margin-left: 270px;
+}
+.white_btn{
+    color: white
+}
+.white_btn:visited{
+    color: white
+}
+@media (max-width: 991px) {
+    .title__container, .title__container h4, .title__container input {
+        color: white;
+        z-index: 5;
+    }
+    .title__container input {
+        border: 2px solid white;
+    }
+    .main {
+        position: relative;
+    }
+    .main::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.4);
+    }
+    
 }
