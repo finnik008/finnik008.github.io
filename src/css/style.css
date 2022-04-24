@@ -404,10 +404,12 @@ main {
 
 .price {
     width: 100%;
-    height: 900px;
+    height: 1000px;
 }
 
 .price h2 {
+    
+    
     font-size: 30px;
     font-weight: bold;
     color: #263244;
@@ -443,29 +445,36 @@ main {
 .change select:hover {
     background: #f8f5f5;
 }
-.number {
-    display: flex;
-    width: 1000px;
-    justify-content:space-between;
-}
 
-#srok::before {
+.infor {
+    font-size: 23px;
+    font-weight: bold;
+}
+.infor::before {
     content: "";
-    display: block;
-    border: solid 2px #d1d1d1;
+    display: flex;
+    border-bottom: solid 5px #d1d1d1;
     width: 750px;
-    margin-top: 40px;   
+    margin: 30px auto;
 
 }
-.number h3 {
-    display: flex;
-    flex-direction: column;
+.number {
+    display: block;
+    float: right;
+    
 }
+.texto {
+    display: block;
+    
+}
+
+
+
 
 .stata {
     width: 100%;
     height: 600px;
-    background: url(../img/bg_stata.jpg)no-repeat fixed center/1400px auto;
+    background: url(../img/bg_stata.jpg)no-repeat fixed center/auto 500px;
 }
 
 .stata h2 {
@@ -478,11 +487,15 @@ main {
 
 .stata h2::after {
     content: "";
-    display: block;
+    display: flex;
+    margin: 0 auto;
     border-bottom: 4px solid #d17700;
     width: 100px;
-    margin-left: 565px;
     padding-top: 20px;
+}
+.stata ul {
+    display: flex;
+    justify-content: center;
 }
 
 .stata li {
@@ -528,15 +541,16 @@ main {
 
 .otzov h2::after {
     content: "";
-    display: block;
+    display: flex;
+    margin: 0 auto;
     border-bottom: 4px solid #d17700;
     width: 100px;
-    margin-left: 565px;
     padding-top: 20px;
 }
 
 .otzov img {
-    margin: 80px 0px 70px 46%;
+    display: flex;
+    margin: 50px auto;
 }
 
 .otzov p {
@@ -547,7 +561,7 @@ main {
 .contact {
     width: 100%;
     height: 1000px;
-    background: url(../img/bg_contact.jpg) no-repeat top/auto 600px;
+    background: url(../img/bg_contact.jpg) no-repeat top/2000px auto;
 }
 
 .contact h2 {
@@ -559,14 +573,16 @@ main {
 }
 
 .contact p {
-    display: inline-block;
     text-align: center;
     color: #fff;
-    margin: 30px 0px 20px 410px;
     font-size: 14px;
 }
 
-
+.info {
+    display: flex;
+    justify-content:space-evenly;
+    margin: 50px 0px;
+}
 .info div {
     float: left;
     color: #fff;
@@ -576,19 +592,13 @@ main {
     text-align: center;
 }
 
-.block_1 {
-    margin-left: 290px;
-
-}
-
 .contact h4 {
-    display: inline-block;
-    margin: 25px 100px 20px 490px;
     font-size: 19px;
     font-weight: 500;
     color: #fff;
     text-align: center;
 }
+
 
 #send {
     color: #fff;
@@ -641,7 +651,7 @@ main {
 }
 
 .contact form {
-    margin-left: 270px;
+    
 }
 .white_btn{
     color: white
