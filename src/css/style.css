@@ -265,6 +265,7 @@ main {
     width: 100%;
     height: 530px;
     background: url(../img/bg_skills.jpg) no-repeat center/auto;
+    
 }
 
 .skills h2 {
@@ -284,23 +285,27 @@ main {
     
     padding-top: 20px;
 }
+.skills ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
 .skills li {
-    float: left;
-    margin-top: 13%;
+    margin-top: 120px;
     margin-right: 45px;
     padding-left: 45px;
-    line-height: 10px;
     font-size: 13px;
     text-align: center;
     line-height: 25px;
     transition: 0.3s;
+    
 }
 
 
 .skills li:hover {
     transform: scale(1.1);
-    margin-top: 15%;
+    margin-top: 110px;
 
 }
 
@@ -315,17 +320,14 @@ main {
 
 .keys {
     width: 100%;
-    height: 1100px;
-}
-.keys img {
-    width: 70%;
-    height: auto;
-    margin: 50px 0px 0px 180px;
+    height: 1200px;
 }
 
 .keys h2 {
     display: flex;
-    margin: 0 auto;
+    flex-direction: column;
+
+    
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -346,14 +348,26 @@ main {
 .keys p {
     text-align: center;
 }
+.keys img {
+    display: block;
+    width: 70%;
+    height: auto;
+    max-width: 1000px;
+    margin: 30px auto;
+    
+}
 
 .dop {
     display: inline-block;
-    float: left;
-    margin-left: 190px;
+    margin-left: 150px;
 
-
-
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 1000px;
+    
 }
 
 .keys h3 {
@@ -408,11 +422,16 @@ main {
 }
 
 .change {
-    margin: 20px 0px 0px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .change select {
-    width: 750px;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    width: 1000px;
     height: 50px;
     background: #eeeeee;
     border: 1px solid #eeeeee;
@@ -424,21 +443,23 @@ main {
 .change select:hover {
     background: #f8f5f5;
 }
-
+.number {
+    display: flex;
+    width: 1000px;
+    justify-content:space-between;
+}
 
 #srok::before {
     content: "";
     display: block;
     border: solid 2px #d1d1d1;
     width: 750px;
-    margin-top: 40px;
+    margin-top: 40px;   
 
 }
-
-.price span {
-
-    float: right;
-    margin-right: 240px;
+.number h3 {
+    display: flex;
+    flex-direction: column;
 }
 
 .stata {
@@ -654,8 +675,12 @@ main {
     position: relative;
     z-index: 10;
 }
-@media (max-width: 900px) {
-    .skills {
-        height: 120%;
+@media (max-width: 1200px) {
+    .skills li{
+/*        display: none;*/
+        transform: scale(0.7);
+        margin-right: 15px;
+        padding-left: 15px;
+        
     }
 }
