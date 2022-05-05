@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style>
 
-body {
-/*    font-family: arial, sans-serif;*/
+</style > body {
+    /*    font-family: arial, sans-serif;*/
     font-family: 'Roboto', sans-serif;
 }
 
 nav {
     width: 100%;
     height: 60px;
-    background: #344051;     
+    background: #344051;
     position: fixed;
     z-index: 10;
 }
 
 .logo {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 60px;
     float: left;
     -webkit-animation: comming 2s ease;
@@ -44,7 +43,7 @@ nav {
     color: white;
     margin-right: 20px;
     line-height: 60px;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
     opacity: 0;
     -webkit-animation: falldown 0.3s forwards ease;
@@ -117,7 +116,7 @@ main {
     background: url(../img/boy.png) 90% 100%/auto 65% no-repeat, url(../img/bg.jpg) top/contain no-repeat;
     position: relative;
     z-index: 9;
-    
+
 }
 
 .title__container {
@@ -182,11 +181,11 @@ main {
 .aboutme {
     height: 800px;
     width: 100%;
-    
+
 }
 
 .aboutme h2 {
-   
+
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -201,7 +200,7 @@ main {
     border-bottom: 4px solid #d17700;
     width: 100px;
     margin: 15px auto;
-    
+
 
 }
 
@@ -219,9 +218,11 @@ main {
     from {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(360deg);
     }
+
     to {
         transform: rotate reverse(0deg);
     }
@@ -239,10 +240,10 @@ main {
     color: #6f707e;
     border: 1px solid #6f707e;
     text-align: center;
-    
+
     background: none;
     padding: 6px 13px 6px 20px;
-    
+
     border-radius: 8px;
     background: url(../img/save.png) no-repeat 3%;
     transition: 0.2s;
@@ -265,7 +266,7 @@ main {
     width: 100%;
     height: 530px;
     background: url(../img/bg_skills.jpg) no-repeat center/auto;
-    
+
 }
 
 .skills h2 {
@@ -282,9 +283,10 @@ main {
     margin: 0 auto;
     border-bottom: 4px solid #d17700;
     width: 100px;
-    
+
     padding-top: 20px;
 }
+
 .skills ul {
     display: flex;
     align-content: center;
@@ -299,7 +301,7 @@ main {
     text-align: center;
     line-height: 25px;
     transition: 0.3s;
-    
+
 }
 
 
@@ -327,7 +329,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    
+
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -348,13 +350,14 @@ main {
 .keys p {
     text-align: center;
 }
+
 .keys img {
     display: block;
     width: 70%;
     height: auto;
     max-width: 1000px;
     margin: 30px auto;
-    
+
 }
 
 .dop {
@@ -362,12 +365,13 @@ main {
     margin-left: 150px;
 
 }
+
 .text {
     display: flex;
     justify-content: center;
     align-content: center;
     width: 1000px;
-    
+
 }
 
 .keys h3 {
@@ -398,7 +402,7 @@ main {
 }
 
 .dop2 {
-   padding-left: 70px;
+    padding-left: 70px;
     display: inline-block
 }
 
@@ -408,8 +412,8 @@ main {
 }
 
 .price h2 {
-    
-    
+
+
     font-size: 30px;
     font-weight: bold;
     color: #263244;
@@ -433,7 +437,7 @@ main {
     display: flex;
     justify-items: center;
     align-content: center;
-    width: 1000px;
+    width: 80%;
     height: 50px;
     background: #eeeeee;
     border: 1px solid #eeeeee;
@@ -450,6 +454,7 @@ main {
     font-size: 23px;
     font-weight: bold;
 }
+
 .infor::before {
     content: "";
     display: flex;
@@ -458,17 +463,19 @@ main {
     margin: 30px auto;
 
 }
+.infor div {
+    height: 50px;
+}
+
 .number {
-    display: block;
+
     float: right;
-    
+
 }
+
 .texto {
-    display: block;
-    
+    float: left;
 }
-
-
 
 
 .stata {
@@ -493,6 +500,7 @@ main {
     width: 100px;
     padding-top: 20px;
 }
+
 .stata ul {
     display: flex;
     justify-content: center;
@@ -580,9 +588,10 @@ main {
 
 .info {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin: 50px 0px;
 }
+
 .info div {
     float: left;
     color: #fff;
@@ -650,25 +659,32 @@ main {
     background: rgba(255, 255, 255, 0.9);
 }
 
-.contact form {
-    
-}
-.white_btn{
+.contact form {}
+
+.white_btn {
     color: white
 }
-.white_btn:visited{
+
+.white_btn:visited {
     color: white
 }
+
 @media (max-width: 991px) {
-    .title__container, .title__container h4, .title__container input {
+
+    .title__container,
+    .title__container h4,
+    .title__container input {
         color: white;
     }
+
     .title__container input {
         border: 2px solid white;
     }
+
     .main {
         position: relative;
     }
+
     .main::after {
         content: "";
         position: absolute;
@@ -676,21 +692,23 @@ main {
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(0,0,0,0.4);
+        background: rgba(0, 0, 0, 0.4);
         z-index: -1;
     }
-    
+
 }
+
 .container h-100 {
     position: relative;
     z-index: 10;
 }
+
 @media (max-width: 1200px) {
-    .skills li{
-/*        display: none;*/
+    .skills li {
+        /*        display: none;*/
         transform: scale(0.7);
         margin-right: 15px;
         padding-left: 15px;
-        
+
     }
 }
